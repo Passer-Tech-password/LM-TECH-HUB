@@ -1,0 +1,122 @@
+body {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-items: center;
+    gap: 60px;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.transition {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(255, 0, 0);
+
+
+
+    transition-property: background-color, width, height;
+    transition-duration: 10s;
+    transition-timing-function: ease-in, ease-out;
+}
+
+.transition:hover {
+    background-color: rgb(0, 0, 255);
+    width: 100vw;
+    height: 100vh;
+}
+
+.transition-cricle {
+    height: 80px;
+    width: 80px;
+    background-color: rgb(250, 55, 0);
+    transition: background-color 0.3s ease-in-out, width 0.3s ease-in-out, height 10.3s ease-in-out, border-radius, transform;
+}
+
+.transition-cricle:hover {
+    background-color: rgb(0, 0, 255);
+    transform: scale(2);
+    border-radius: 100%;
+}
+
+.animation {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: rgb(49, 48, 43);
+    margin-top: 5%;
+    border: 5px solid #ffa500;
+    animation: loading 2s linear infinite;
+    border-bottom-color: blue;
+}
+
+@keyframes loading {
+    0% {
+        background: rgb(49, 48, 43);
+        transform: rotate(0deg);
+        /* border: 1px solid orange; */
+    }
+
+    100% {
+        background: rgb(202, 12, 12);
+        transform: rotate(360deg);
+        /* border: 1px solid yellow; */
+    }
+
+ 
+}
+
+.animation2 {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    /* background: rgb(49, 48, 43); */
+    margin-top: 5%;
+    border: 8px dotted orange;
+    animation: load 3s linear infinite;
+    /* border-bottom-color: blue; */
+}
+
+@keyframes load {
+    0% {
+        /* background: rgb(49, 48, 43); */
+        transform: rotate(0deg);
+        /* border: 9px solid orange; */
+    }
+
+    100% {
+        /* background: rgb(202, 12, 12); */
+        transform: rotate(360deg);
+        /* border: 1px solid yellow; */
+    }
+
+
+}
+
+.animation3 {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    /* background: rgb(49, 48, 43); */
+    margin-top: 5%;
+    border: 8px dotted orange;
+    animation: loader 0.1s linear infinite;
+    /* border-bottom-color: blue; */
+}
+
+@keyframes loader {
+    0% {
+        /* background: rgb(49, 48, 43); */
+        transform: scale(1);
+        /* border: 9px solid orange; */
+    }
+
+    100% {
+        /* background: rgb(202, 12, 12); */
+        transform: scale(2);
+        /* border: 1px solid yellow; */
+    }
+
+
+}
