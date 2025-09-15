@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div.home-grid {
+    height: 100vh;
+    width: 100vw;
+    gap: 2px;
+    background-color: goldenrod;
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)) ;
+}
+div.child {
+    background: black ;
+}
